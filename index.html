@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            .attention {
+                font-family:'Courier New', Courier, monospace;
+                color:crimson;
+
+            }
+            .imagegenric {
+                border: 5px solid;
+                width: 200;
+                height: 100;
+            }
+            p {
+                font-family:'Courier New', Courier, monospace;
+                color: darkorange;
+            }
+
+            h3 {
+                font-family:'Courier New', Courier, monospace;
+                color:gold;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <h1 class="attention">
+            How Smart are you?
+        </h1>
+        <img src="https://wallpapercave.com/wp/wp9440268.jpg" width="200" height="100" class="imagegenric">
+        <h2 class="attention"><em>About</em></h2>
+        <p>
+            A fun Trivia Game to Test how smart you are?
+            You will be presented by 10 questions, save the poor man John from an ogre
+            <strong>Get 7 or more Right to win and Save John!</strong>
+        </p>
+        <h2 class="attention"><em>Sample</em></h2>
+        <img src="C:\Users\itsti\OneDrive\Desktop\compscifinalreal\pic.png" width="900" height="450" class="imagegeneric">
+        <p>***QUESTIONS <strong>WILL</strong> VARY DEPENDING ON THE TEST!***</p>
+        <hr>
+        <h2 class="attention"><em>Backend (For all who are Interested)</em></h2>
+        <p>The program consists of the two files.</p>
+        <h3>1. Data.py</h3>
+        <p>The program has two lists; one with questions; and one with the answers to the questions.
+            They are setup in such a way that the questions placement in the questions list is the same as that questions
+            answer's placement in the list of answers.
+            The file also includes a program where you could input question and answers,
+             then it will return a list of questions and answers if you want to add questions.
+        </p>
+        <h3>2. Main.py</h3>
+        <p>
+            This imports all the databases from the <em>data.py</em>. First it uses 
+            a loop that is of 10 (for 10 questions). In the loop, first a random variable k is selected. 
+            <br>
+            <strong>K range</strong>: It is of 0 to the length of the questions. 
+            <br>
+            <strong>Generating Questions and Answers</strong>
+            <br>
+            The program sets the selected the question to <em>questions[i]</em>
+            <br>
+            The program sets the selected the answer to <em>answers[i]</em>
+            <br>
+            The progam gets the user input and then checks it with answer[i], to make sure it is right. 
+            If the it matches then it prints "CORRECT" and addes 1 to the score. If it doesn't, match then it prints "Incorrect"
+            along with answers[i]. And so then the questions[i] and answers[i] is deleted to prevent an repetition of questions (Not Deleted forever). 
+            At end if the score is greater than 10, then the user wins. If not, they loose. 
+            <br>
+
+
+
+
+        </p>
+        <h2 class="attention"><em>Code</em></h2>
+        <h3>Data.py</h3>
+        <p>
+            # ADDING answers and questions program:
+
+
+            questions = []
+            answers = []
+
+            #questions
+            #for i in range (0, 30):
+                #question = input()
+
+                #questions.append(question)
+
+            #print(questions)
+
+            # answers
+            #
+            #for i in range (0, 30):
+                #answer = input()
+
+                #answers.append(answer)
+
+            #print(answers)
+
+            # new list
+            questions = ['In what country did the first Starbucks open outside of North America?',
+                        'What does CODA stand for?', 'In a website browser address bar, what does "www" stand for?',
+                        'Where were the Declaration of Independence, the Constitution, and the Bill of Rights stored during World War II?', 'What is the tiny piece at the end of a shoelace called?', 'Which company\'s slogan is "You\'re in good hands?"', 'Who was the first televised President?', 'Pocahontas was baptized and given what English name?', 'Originally, Amazon only sold what kind of product?', 'In 2009, what became the first Morse code character to be added since WWII?','Who painted the Mona Lisa', 'Who was the first woman to win a Nobel Prize?', 'Which kind of bulbs were once exchanged as a form of currency?', 'What was the original purpose of the tiny pocket in jeans?', 'What does SPF in sunscreen stand for?', 'Chrome, Safari, Firefox and Explorer are different types of what?', 'In what year was the internet opened to the public?', 'Who is often credited with creating the world’s first car?', 'Demolition of the Berlin wall separating East and West Germany began in what year?', 'Who was the first woman pilot to fly solo across the Atlantic?', 'When did Facebook first launch?', '"Ladies and gentlemen, rock and roll," were the first words spoken on what cable channel that launched at 12:01 a.m. on August 1, 1981?', 'A 401(k) is a type of tax-advantaged defined-contribution account designed to help you save for what withdrawal from working life?', 'What is the last name of the business tycoon behind the "No. 5" perfume?', 'Some of our favorite collective nouns for animals include a congregation of alligators, a business of ferrets, an ostentation of peacocks, and a gaggle of what other fowl?', 'The digital yuan is giving Alipay a run for its money as the largest mobile payment network based in what country?', ' In the Catholic Church, the Bishop of Rome is a title more commonly known as what?', 'An important ratio that helps home buyers determine how much house they can afford, DTI, stands for what in real-estate parlance?']
+
+
+
+            answers = ['Japan', 'Child of Deaf Adults', 'World Wide Web', 'Fort Knox', 'An aglet', 'Allstate', 'Franklin D. Roosevelt', ' Rebecca', 'Books', 'The "@" symbol', 'Leonardo da Vinci', 'Marie Curie', 'Tulips', 'To store pocket watches', 'Sun Protection Factor', 'Web browsers', '1993', 'Karl Benz', '1989', 'Amelia Earhart', '2004', 'MTV', 'Retirement', 'Chanel', 'Geese', 'China', 'Pope', 'Debt to Income', '', '']
+
+
+        </p>
+        <h3>Data.py</h3>
+
+
+    </body>
+</html>
